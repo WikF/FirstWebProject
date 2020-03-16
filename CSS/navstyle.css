@@ -95,6 +95,56 @@ button {
   width: 30%;
 }
 
+input {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  width:   70%;
+}
+input :hover {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(6, 104, 129);
+  font-size: 18px;
+}
+
+.addBtn {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: rgb(84, 223, 142);
+  font-size: 18px;
+  transition: 0.2s;
+  width: 50%;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+/* Style the header */
+.header {
+  background-color: #59beec;
+  padding: 12px 8px 12px 40px;
+  font-size: 18px;
+  transition: 0.2s;
+  width:   75%;
+  color: rgb(252, 253, 251);
+}
+
+/* Clear floats after the header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .list {
   cursor: pointer;
   position: relative;
@@ -119,6 +169,8 @@ button {
   color: #fff;
   text-decoration: line-through;
 }
+
+
 .close {
   position: absolute;
   right: 0;
@@ -127,9 +179,6 @@ button {
 }
 
 
-
-
-/* Style the close button */
 .close {
   position: absolute;
   right: 0;
