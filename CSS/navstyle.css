@@ -50,6 +50,7 @@ ul.topnav li.right {
   height: 100%;
   float: right;
   padding-right: 60px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .meimage {
@@ -64,16 +65,20 @@ ul.topnav li.right {
   float: left;
   background-color: lightgray;
   text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .leftcolumnindex {
-  padding: 20px;
+  padding: 10px 50px;
   width: 45%;
   float: left;
+  font-family: 'Courier New', Courier, monospace;
 }
 .rightcolumnindex {
   width: 45%;
   float: right;
-  padding: 20px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+s
 }
 footer {
   position: fixed;

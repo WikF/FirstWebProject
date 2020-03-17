@@ -1,3 +1,4 @@
+//moja lista - dodawanie guzika x
 var mojaLista = document.getElementsByClassName("list");
 var i;
 for (i = 0; i < mojaLista.length; i++) {
@@ -8,6 +9,7 @@ for (i = 0; i < mojaLista.length; i++) {
   mojaLista[i].appendChild(span);
 }
 
+//guzik x zamyka element
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -16,7 +18,7 @@ for (i = 0; i < close.length; i++) {
     div.style.display = "none";
   }
 }
-
+//dodawanie nowego elementu + okienko kiedy chcemy wpisać puste pole
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
