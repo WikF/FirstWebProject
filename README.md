@@ -3,7 +3,7 @@ FirstWebProject
 Web development project
 Fodlery:
 
-Assets: foldery: img, video, audio
+Assets: foldery: img/ obrazki do zakładki about me, video / video do zakładki myvideo 
 CSS/style.css
 Scripts/app.js
 
