@@ -8,7 +8,7 @@ CSS/style.css
 Scripts/app.js
 
 Responsywność:
- -Tag: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ -Tag: meta name="viewport" content="width=device-width, initial-scale=1.0"
 
 
 Menu: 
