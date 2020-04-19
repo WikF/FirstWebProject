@@ -148,8 +148,14 @@ input :hover {
   padding: 12px 8px 12px 40px;
   font-size: 18px;
   transition: 0.2s;
-  width:   75%;
+  width:   inherit%;
   color: rgb(252, 253, 251);
+}
+.list-background {
+  background-color: aliceblue;
+  padding: 12px 8px 12px 40px;
+  width:   75%;
+
 }
 
 /* Clear floats after the header */
@@ -161,12 +167,13 @@ input :hover {
 .list {
   cursor: pointer;
   position: relative;
+  float: auto;
   padding: 12px 8px 12px 40px;
-  list-style-type: none;
+  list-style-type: none ;
   background: #eee;
   font-size: 18px;
   transition: 0.2s;
-  width:   50%;
+  width:   inherit;
 }
 
 .list:nth-child(odd) {
@@ -191,13 +198,6 @@ input :hover {
   padding: 12px 16px 12px 16px;
 }
 
-
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
 
 .close:hover {
   background-color: #f44336;
