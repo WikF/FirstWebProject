@@ -25,11 +25,11 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover:not(.active) {
-  background-color: rgba(152, 255, 111, 0.803);
+  background-color: #0dcea7;
 }
 
 ul.topnav li a.active {
-  background-color: #4caf50;
+  background-color: #3104fc;
 }
 ul.topnav li.right {
   float: right;
@@ -44,31 +44,39 @@ ul.topnav li.right {
 .aboutme {
   width: 100%;
   float: right;
+  padding: 30px;
 }
 .whoami {
-  width: 50%;
+  width: 45%;
   height: 100%;
   float: right;
-  padding-right: 60px;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 30px;
+  padding-top: 80px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .meimage {
   height: 100%;
   width: 40%;
   float: left;
-  padding-left: 30px;
+  padding-left: 0px;
+  padding-top: 20px;
+  border-radius: 60%;
+
 }
 
 .indextitle {
-  padding: 10px 50px;
-  float: left;
-  background-color: lightgray;
-  text-align: left;
+  padding: 60px 0;
+  text-align: center;
+  background: #0dcea7;
+  color: white;
+  font-size: 30px;
+  width: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 .leftcolumnindex {
-  padding: 10px 50px;
+  padding: 2%;
   width: 45%;
   float: left;
   font-family: 'Courier New', Courier, monospace;
@@ -76,7 +84,7 @@ ul.topnav li.right {
 .rightcolumnindex {
   width: 45%;
   float: right;
-  padding: 10px;
+  padding: 2%;
   font-family: 'Courier New', Courier, monospace;
 
 }
@@ -91,7 +99,7 @@ footer {
 }
 
 button {
-  background-color: rgb(10, 149, 184);
+  background-color: rgba(0, 99, 247, 0.756);
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -195,4 +203,3 @@ input :hover {
   background-color: #f44336;
   color: white;
 }
-

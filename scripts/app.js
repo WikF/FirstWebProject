@@ -1,35 +1,53 @@
 //moja lista - dodawanie guzika x
-var mojaLista = document.getElementsByClassName("list");
+//nazwy zmiennych po ang
+//wszystkie zmienne na górze
+
+var close;
+var span;
+var txt;
+var div;
 var i;
-for (i = 0; i < mojaLista.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+var txt;
+var spanEdit;
+var txtEdit;
+var txtDel;
+var li;
+var p;
+var edit;
+var close;
+var t;
+var inputValue;
+var mylist = document.getElementsByClassName("list");
+
+for (i = 0; i < mylist.length; i++) {
+  span = document.createElement("SPAN");
+  txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
-  mojaLista[i].appendChild(span);
+  mylist[i].appendChild(span);
 }
 
 //guzik x zamyka element
-var close = document.getElementsByClassName("close");
-var i;
+close = document.getElementsByClassName("close");
+i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function () {
-    var div = this.parentElement;
+    div = this.parentElement;
     div.style.display = "none";
   }
 }
-
+//
 
 //moja lista - dodawanie edycji 
 
-var mojaLista = document.getElementsByClassName("list");
+var mylist = document.getElementsByClassName("list");
 var i;
-for (i = 0; i < mojaLista.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("✎");
+for (i = 0; i < mylist.length; i++) {
+  span = document.createElement("SPAN");
+  txt = document.createTextNode("✎");
   span.className = "edit";
   span.appendChild(txt);
-  mojaLista[i].appendChild(span);
+  mylist[i].appendChild(span);
 }
 
 //funkcja edytowania
@@ -57,7 +75,7 @@ function edit() {
   var close = document.getElementsByClassName("close");
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      var div = this.parentElement;
+      div = this.parentElement;
       div.style.display = "none";
     }
   }
@@ -68,8 +86,8 @@ function edit() {
 //dodawanie nowego elementu + okienko kiedy chcemy wpisać puste pole
 function newElement() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
+  inputValue = document.getElementById("myInput").value;
+  t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
     alert("You must write something!");
@@ -77,10 +95,10 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-  var spanDel = document.createElement("SPAN");
-  var spanEdit = document.createElement("SPAN");
-  var txtEdit = document.createTextNode("✎");
-  var txtDel = document.createTextNode("\u00D7");
+  spanDel = document.createElement("SPAN");
+  spanEdit = document.createElement("SPAN");
+  txtEdit = document.createTextNode("✎");
+  txtDel = document.createTextNode("\u00D7");
   spanDel.className = "close";
   spanEdit.className = "edit"
   li.className = "list"
@@ -89,17 +107,17 @@ function newElement() {
   li.appendChild(spanDel);
   li.appendChild(spanEdit);
 
-  var edit = document.getElementsByClassName("edit");
-  var i;
+  edit = document.getElementsByClassName("edit");
+  i;
   for (i = 0; i < edit.length; i++) {
     edit[i].onclick = function () {
-      var div = this.parentElement;
-      var p = prompt("Edit your entry");
+      div = this.parentElement;
+      p = prompt("Edit your entry");
       div.innerHTML = p;
-      var spanDel = document.createElement("SPAN");
-      var spanEdit = document.createElement("SPAN");
-      var txtEdit = document.createTextNode("✎");
-      var txtDel = document.createTextNode("\u00D7");
+      spanDel = document.createElement("SPAN");
+      spanEdit = document.createElement("SPAN");
+      txtEdit = document.createTextNode("✎");
+      txtDel = document.createTextNode("\u00D7");
       spanDel.className = "close";
       spanEdit.className = "edit"
       spanDel.appendChild(txtDel);
@@ -109,10 +127,10 @@ function newElement() {
     }
 
   }
-  var close = document.getElementsByClassName("close");
+    close = document.getElementsByClassName("close");
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      var div = this.parentElement;
+      div = this.parentElement;
       div.style.display = "none";
       li.appendChild(spanDel);
       li.appendChild(spanEdit);
