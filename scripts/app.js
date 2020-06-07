@@ -107,10 +107,10 @@ function newElement() {
   li.appendChild(spanDel);
   li.appendChild(spanEdit);
 
-  edit = document.getElementsByClassName("edit");
+  editD = document.getElementsByClassName("edit");
   i;
-  for (i = 0; i < edit.length; i++) {
-    edit[i].onclick = function () {
+  for (i = 0; i < editD.length; i++) {
+    editD[i].onclick = function () {
       div = this.parentElement;
       p = prompt("Edit your entry");
       div.innerHTML = p;
@@ -136,6 +136,8 @@ function newElement() {
       li.appendChild(spanEdit);
     }
   }
+
+  
 }
 
 
